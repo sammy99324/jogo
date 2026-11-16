@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot  Maria Bauab- Assistente Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+     
+            <div class="avatar"><img src="baub pronto.png" width="50" height="50" alt="Avatar do TechBot"></div>
+            <div>
+                <h2>TechBot</h2>
+                <span>● Assistente virtual online</span>
+            </div>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+            <div class="message bot">
+                Olá! 👋 Sou o bot da bauab, seu assistente escolar!
+                <br><br>
+                Pode me perguntar sobre a queridissima escola maria bauab,
+                programação, tecnologia e escola.
+            </div>
+        </main>
+
+        <div class="suggestions">
+            <button onclick="perguntar('olá')">Olá</button>
+            <button onclick="perguntar('oi')">Oi</button>
+            <button onclick="perguntar('ei')">Ei</button>
+        </div>
+
+        <footer class="chat-input">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Digite sua pergunta..."
+                onkeydown="if(event.key === 'Enter') enviarMensagem()"
+            >
+
+            <button onclick="enviarMensagem()">➤</button>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
